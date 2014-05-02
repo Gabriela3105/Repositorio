@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>FACTURA</div>
+        <h2><b><center>LISTA DE PRODUCTOS EXISTENTES </center> </b> </h2>
+        
+        <select name="OS">
+   <option selected value="0"> Elige una opción </option>
+       <optgroup label="PrimeraNecesidad">
+       <option value="1">AZUCAR</option>
+       <option value="2">ARROZ</option>
+       <option value="3">LENTEJA</option>
+       <option value="4">ACEITE</option>
+       <option value="5">PAN</option>
+       <option value="6">SAL</option>
+   </optgroup>
+   <optgroup label="Higiene">
+       <option value="10">SHAMPOO</option>
+       <option value="11">JABON</option>
+       <option value="12">PASTADENTAL</option>
+   </optgroup>
+</select>
+        <label>Precio Unitario:</label>   <input type="text" id="txtvalor" name="txtvalor"  />
+         <label>Cantidad:</label>  <input type="text" id="txtvalor" name="txtvalor"  />
+         <input type="button" id="FACTURA" name="FACTURA"  value="COMPRAR"   onclick="Factura()"/>
+    <h2><b><center>LISTA DE CLIENTES EXISTENTES </center> </b> </h2>
+        
+        <select name="OS">
+   <option selected value="0"> Elige una opción </option>
+       <optgroup label="ClientesFijo">
+       <option value="1">GABRIELA</option>
+       <option value="2">OSWALDO</option>
+       <option value="3">JOHN</option>
+       <option value="4">STEEVEN</option>
+       <option value="5">MARCELO</option>
+       <option value="6">JUAN</option>
+   </optgroup>
+   <optgroup label="AgregueCliente">
+       <option value="10">-----</option>
+       <option value="11">----</option>
+       <option value="12">------L</option>
+   </optgroup>
+</select>    
+    <label>RUC:</label>   <input type="text" id="txtvalor" name="txtvalor"  />
+    <input type="button" id="FACTURA" name="FACTURA"  value="INGRESAR"   onclick="Factura()"/>
+         <label>TELEFONO:</label>  <input type="text" id="txtvalor" name="txtvalor"  />
+         <input type="button" id="FACTURA" name="FACTURA"  value="INGRESAR"   onclick="Factura()"/>
+       
+         <br></br><br></br>
+                <tr><th>Precio sin Iva: <input type="text" id="PrecioSinIva" name="PrecioSinIva"/></th></tr></br>
+                <tr><th>Iva: <input type="text" id="iva" name="iva" /></th></tr></br>
+                <tr><th>Precio: <input type="text" id="PrecioTotal" name="PrecioTotal" />  </th></tr></br>
+    </body>
+</html>
+<script>
+    function Factura()
+    {
+       var acumulador=0; 
+        var SumaTotal=0;
+        var descuento=0
+        var IVA=0
+            
+        var productos=["azucar,arroz, lenteja, aceite,pan,sal,shampoo, jabon, pastadental]
+        for(i=0; i< productos.length; i++)
+            
+        
+            
+            
+        }
+    
+    
+</script>

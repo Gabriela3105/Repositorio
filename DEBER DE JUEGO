@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><center><h1>Tres en raya</h1></center></div>
+        <label>Indicar con que jugador va iniciar:1 o 2 </label>
+        <input type="text" id="jugador" name="juego" value=""/>
+        <input type="button" id="contenido" value="Iniciar" onclick="ingresar1()"/> </br>
+       <label>Escoger simbolo</label> 
+       <input type="text" id="jugador" name="juego"/>
+        <input type="button" id="cosa" value="Escoger" onclick="escoger()"/>
+    
+    <center>
+        
+        <input type="text" id="cuadro1" name="cuadro" onblur="evaluar(this.value)" /> 
+        <input type="text" id="cuadro2" name="cuadro" onblur="evaluar(this.value)"/> 
+        <input type="text" id="cuadro3" name="cuadro" onblur="evaluar(this.value)"/> </br>
+        <input type="text" id="cuadro4" name="cuadro" onblur="evaluar(this.value)"/> 
+        <input type="text" id="cuadro5" name="cuadro" onblur="evaluar(this.value)"/> 
+        <input type="text" id="cuadro6" name="cuadro" onblur="evaluar(this.value)"/> </br>
+        <input type="text" id="cuadro7" name="cuadro" onblur="evaluar(this.value)"/> 
+        <input type="text" id="cuadro8" name="cuadro" onblur="evaluar(this.value)"/> 
+        <input type="text" id="cuadro9" name="cuadro" onblur="evaluar(this.value)"/> </br>
+        <input type="button" id="cosa" value="Resultado"onclick="ingresar()"/>
+        <a href="index.html"><h1>Clic Aquí para Reiniciar el Juego.</h1></a><br>
+    </center>
+    </body>
+    </html>
+    <script>
+        function ingresar1()
+        {
+            var numero=document.getElementById("jugador").value
+           
+            if(numero!="1" && numero!="2" )
+                {
+                    alert("NO HA INTRODUCIDO UN NUMERO CORRECTO, DEBE DE INGRESAR O 1 O 2")
+           
+                     }
+        }
+        function escoger()
+        {
+            
+        }
+    
+    function evaluar(valor){
+        /*funcion evaluar numeros que sean X o O*/
+        var aux="";
+        if(valor!="X" && valor!="O"){
+            alert("Valor introducido no es correcto, introduzca X o O")
+        }
+        
+    }
+    
+    function ingresar(){
+         var cuadro1=document.getElementById("cuadro1").value;
+         var cuadro2=document.getElementById("cuadro2").value;
+         var cuadro3=document.getElementById("cuadro3").value;
+         var cuadro4=document.getElementById("cuadro4").value;
+         var cuadro5=document.getElementById("cuadro5").value;
+         var cuadro6=document.getElementById("cuadro6").value;
+         var cuadro7=document.getElementById("cuadro7").value;
+         var cuadro8=document.getElementById("cuadro8").value;
+         var cuadro9=document.getElementById("cuadro9").value;
+     var bandera=1
+     while(bandera==1)
+     {
+       if( cuadro1=="X" && cuadro2=="X" && cuadro3=="X" )
+       {
+          /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+       
+        if(cuadro4=="X" && cuadro5=="X" && cuadro6=="X")
+       {
+           /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+        if( cuadro7=="X" && cuadro8=="X" && cuadro9=="X" )
+       {
+           /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+        if( cuadro1=="X" && cuadro4=="X" && cuadro7=="X" )
+       {
+           /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+         if( cuadro2=="X" && cuadro5=="X" && cuadro8=="X" )
+       {
+           /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+        if( cuadro3=="X" && cuadro6=="X" && cuadro9=="X" )
+       {
+           /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+         if( cuadro1=="X" && cuadro5=="X" && cuadro9=="X" )
+       {
+           /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+       if( cuadro3=="X" && cuadro5=="X" && cuadro7=="X" )
+       {
+           /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+ 
+       if( cuadro1=="O" && cuadro2=="O" && cuadro3=="O" )
+       {
+           /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+       
+        if( cuadro4=="O" && cuadro5=="O" && cuadro6=="O" )
+       {
+           /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+        if( cuadro7=="O" && cuadro8=="O" && cuadro9=="O" )
+       {
+           /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+        if( cuadro1=="O" && cuadro4=="O" && cuadro7=="O" )
+       {
+           /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+         if( cuadro2=="O" && cuadro5=="O" && cuadro8=="O" )
+       {
+          /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+        if( cuadro3=="O" && cuadro6=="O" && cuadro9=="O" )
+       {
+           /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+         if( cuadro1=="O" && cuadro5=="O" && cuadro9=="O" )
+       {
+           /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+       if( cuadro3=="O" && cuadro5=="O" && cuadro7=="O" )
+       {
+          /*alert("HAS GANADO")*/
+           var bandera=0
+       }
+       
+   }
+   
+   
+   if(bandera==0)
+   {
+       alert("HAS GANADO")
+   }
+   else 
+   {
+       alert("NADIE HA GANADO")
+   }
+   } 
+   
+    </script>
